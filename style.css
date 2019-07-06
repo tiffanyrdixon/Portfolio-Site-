@@ -1,0 +1,131 @@
+
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: font-family: 'IBM Plex Serif', serif;
+}
+
+img{
+  max-width:100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.container{
+  padding: 15px;
+  max-width:1100px;
+  margin: auto;
+}
+/*header start*/
+#header{
+  /**background-color: #3d405b; /**remove this is there is error**/
+  transition: background-color 0.3s;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+#header.open #navigation{
+transform: translateX(0px);
+}
+#header.open #nav-toggle{
+  background-color: rgba(255,255,255,0.2);
+}
+
+#header.scrolled{
+background-color: #3d405b;
+
+}
+
+
+#logo{
+  width: 70%;
+  display: inline-block;
+}
+#nav-toggle{
+  width: 70px;
+  display: inline-block;
+  font-size: 1.7em;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 10px;
+}
+
+#header a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+}
+#logo a{
+  font-size: 1.7em;
+  padding: 30px;
+  padding-left: 15px;
+  display: inline-block;
+}
+#navigation{
+  width: 300px;
+  position: absolute;
+  background-color: #3d405b;
+  min-height: 100vh;
+  transform: translateX(-300px);
+  transition: transform 0.4s;
+}
+#navigation a{
+  display: block;
+  opacity: 0.8;
+}
+#navigation a:hover{
+  opacity: 1;
+}
+/*header end*/
+
+/*Intro start*/
+#intro{
+  background-image: linear-gradient(rgba(61,64,91,0.8),url(../img/u1.jpg);
+  min-height: 500px;
+  background-size: cover;
+}
+.intro-text{
+  postition: relative;
+  top:100px;
+  color: #fff;
+  font-size:1.9em;
+  text-align:center;
+}
+.intro-text h1 strong,
+.intro-text h1 em{
+  font-size: 1.2em;
+  padding: 5px 0px;
+  display:block;
+  color: #e07a5f;
+  text-transform: uppercase;
+}
+.call-to-action{
+  margin:20px 0px;
+}
+.btn{
+  padding: 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.btn-bg{
+  color: #fff;
+  background-color: #e07a5f;
+}
+
+.btn-highlight{
+  color: #fff;
+  background-color: #3d450b;;
+}
+/*Intro end*/
